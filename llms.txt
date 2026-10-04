@@ -1,0 +1,30 @@
+# Abu Al-Ragheb Tires (أبو الراغب للإطارات)
+
+> Jordan's multi-brand tire, wheel and battery specialist, founded in Mahatta, Amman in 1963 by Sharif Abu Al-Ragheb and run by the family for three generations. Five branches in Amman, a 24/7 roadside service called Faz3a, fleet and government supply since 1967, and B2B supply in the UAE since 2024 with a Dubai (Al Quoz) showroom opening soon.
+
+Site is bilingual: English at /, Arabic (Jordanian register; Gulf register on /ar/dubai) at /ar/. All prices are quoted on WhatsApp — there is no online checkout.
+
+## Key facts
+- Founded: 1963, Mahatta, Amman, Jordan. Legal entity: Haitham Abu Al-Ragheb Sons Co.
+- Branches (Amman): 7th Circle (main, Pirelli Center, Zahran St.), Mahatta (King Abdullah I St.), Bayader (Industrial St.), Gardens (inside Engen station, Wasfi Al-Tal St., open until midnight incl. Friday), Wadi Saqra.
+- Faz3a 24/7: puncture, on-site tire fitting, battery, tow — inside Amman within ~45 minutes. WhatsApp +962 77 504 0602.
+- Sales WhatsApp: +962 77 504 0601 · Phone: +962 7 7633 3353 · Email: info@abualraghebtires.com
+- Official dealer: Zeknova, Vitour, Wideway, Maxxis Razr, Fuel, KMC, XD wheels, Turbo Batteries. Authorised distributor: Pirelli, Michelin, Continental, Goodyear, Bridgestone, Dunlop, Toyo, Falken, BFGoodrich, Hankook, Kumho, Nexen, Brinx, Sailun, Giti, Jinyu, Linglong, Petlas, Lassa and more.
+- Motorsport: Rally Jordan, Jordan Drift, Baja, Red Bull Car Park Drift.
+
+## Pages
+- [Home](https://abualraghebtires.com/): overview, quick paths, branches, FAQ.
+- [Tire Finder](https://abualraghebtires.com/tires): search by size (width/profile/rim) or by vehicle; catalogue at /data/catalogue.csv.
+- [Faz3a 24/7](https://abualraghebtires.com/faz3a): roadside assistance — how it works, coverage, pricing from JD 10.
+- [Branches](https://abualraghebtires.com/branches): five Amman branches with hours, maps and per-branch pages (/branches/{slug}).
+- [Fleet & Government](https://abualraghebtires.com/fleet): supply contracts, on-site fitting, tender documentation; company profile on request.
+- [Brands](https://abualraghebtires.com/brands): all brands with per-brand pages (/brands/{slug}).
+- [About](https://abualraghebtires.com/about): timeline since 1963, factory training, motorsport.
+- [Dubai](https://abualraghebtires.com/dubai): UAE B2B supply and the Al Quoz showroom.
+- [Contact](https://abualraghebtires.com/contact) · [Q&A](https://abualraghebtires.com/faq) · [News & Offers](https://abualraghebtires.com/news) · [Careers](https://abualraghebtires.com/careers)
+
+## Arabic
+- Same structure under https://abualraghebtires.com/ar/ (e.g. https://abualraghebtires.com/ar/tires, https://abualraghebtires.com/ar/faz3a).
+
+## Optional
+- [Sitemap](https://abualraghebtires.com/sitemap.xml)
