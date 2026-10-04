@@ -68,7 +68,7 @@ class Component extends DCLogic {
     this._onHash = () => { const x = (location.hash || "").replace("#", ""); if (Component.PAGES[x]) this.setState({ slug: x }); };
     window.addEventListener("hashchange", this._onHash);
   }
-  componentDidUpdate(prev) { this.syncDoc(); if (this.props.lang && this.props.lang !== prev.lang) this.setState({ lang: this.props.lang }); if (this.props.page && this.props.page !== prev.page) this.setState({ slug: this.props.page }); const p = Component.PAGES[this.state.slug]; if (p) document.title = `${p.en[0]} — coming soon | Abu Al-Ragheb Tires`; }
+  componentDidUpdate(prev) { this.syncDoc(); if (this.props.lang && this.props.lang !== prev.lang) this.setState({ lang: this.props.lang }); if (this.props.page && this.props.page !== prev.page) this.setState({ slug: this.props.page }); const p = Component.PAGES[this.state.slug]; if (p) window.__arrtLogicTitle = `${p.en[0]} — coming soon | Abu Al-Ragheb Tires`; }
   componentWillUnmount() { window.removeEventListener("hashchange", this._onHash); }
   detectLang() { try { const q = new URLSearchParams(location.search).get("lang"); if (q === "ar" || q === "en") return q; if (/^\/ar(\/|$)/.test(location.pathname)) return "ar"; return localStorage.getItem("arrt-lang"); } catch (e) { return null; } }
   persistLang(l) {
