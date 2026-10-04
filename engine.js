@@ -87,7 +87,12 @@
     }
     const html = walk(tpl, [vals]);
     let css = "";
-    hover.forEach(function (id, rule) { css += "." + id + ":hover,." + id + ":focus-visible{" + rule + "}\n"; });
+    // Hover rules must beat the element's inline style attribute, so every declaration gets !important.
+    hover.forEach(function (id, rule) {
+      var decl = rule.split(";").map(function (d) { return d.trim(); }).filter(Boolean)
+        .map(function (d) { return /!important\s*$/.test(d) ? d : d + " !important"; }).join(";");
+      css += "." + id + ":hover,." + id + ":focus-visible{" + decl + "}\n";
+    });
     return { html: html, fns: fns, css: css };
   }
   return { render: render, esc: esc };
