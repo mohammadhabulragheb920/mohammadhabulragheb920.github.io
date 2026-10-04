@@ -18,10 +18,18 @@
     var y = window.scrollY;
     root.innerHTML = r.html;
     hoverEl.textContent = r.css;
+    sync(root);
     bind(root, r.fns);
     if (i.componentDidUpdate) { try { i.componentDidUpdate(lastProps || i.props, {}); } catch (e) { console.warn(e); } }
     lastProps = i.props;
     if (Math.abs(window.scrollY - y) > 2) window.scrollTo(0, y);
+  }
+  // HTML attributes don't drive live form state after innerHTML: push value/checked/disabled into the DOM properties.
+  function sync(el) {
+    el.querySelectorAll("select[value]").forEach(function (s) { var v = s.getAttribute("value"); s.value = v; if (s.value !== v) s.selectedIndex = 0; });
+    el.querySelectorAll("input[value]").forEach(function (n) { if (n.type !== "checkbox" && n.type !== "radio") n.value = n.getAttribute("value"); });
+    el.querySelectorAll("input[checked]").forEach(function (n) { var v = n.getAttribute("checked"); n.checked = !(v === "" || v === "false"); });
+    el.querySelectorAll("[disabled]").forEach(function (n) { var v = n.getAttribute("disabled"); if (v === "" || v === "false") n.removeAttribute("disabled"); else n.disabled = true; });
   }
   function bind(el, fns) {
     ["click", "change", "submit", "input"].forEach(function (ev) {
