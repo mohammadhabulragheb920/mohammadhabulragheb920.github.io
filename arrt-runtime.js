@@ -10,7 +10,12 @@
   DCLogic.prototype.forceUpdate = function () { schedule(this); };
   window.DCLogic = DCLogic;
   var pending = null;
-  function schedule(inst) { if (pending) return; pending = true; requestAnimationFrame(function () { pending = null; paint(inst); }); }
+  // rAF is paused in background tabs, so a timer fallback guarantees the repaint still lands.
+  function schedule(inst) {
+    if (pending) return; pending = true;
+    var run = function () { if (!pending) return; pending = null; paint(inst); };
+    requestAnimationFrame(run); setTimeout(run, 80);
+  }
   var root, tpl, hoverEl, inst, lastProps;
   function paint(i) {
     var vals = i.renderVals();
