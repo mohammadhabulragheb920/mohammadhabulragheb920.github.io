@@ -25,7 +25,7 @@ Site is bilingual: English at /, Arabic (Jordanian register; Gulf register on /a
 - [About](https://abualraghebtires.com/about): timeline since 1963, factory training, motorsport.
 - [Dubai](https://abualraghebtires.com/dubai): UAE B2B supply and the Al Quoz showroom.
 - [Services](https://abualraghebtires.com/services): tire fitting, wheel balancing, puncture repair, nitrogen, car batteries, wheels & rims; tires for cars, SUV/4x4, EVs, trucks & buses (/services/{slug}).
-- [Tire guides](https://abualraghebtires.com/guides): how to read a tire size, when to replace tires, DOT age code, tire pressure in Jordan's heat, balancing vs alignment, all-terrain vs mud-terrain, premium vs value tires, flat tire steps, tire rotation (/guides/{slug}).
+- [Tire guides](https://abualraghebtires.com/guides): how to read a tire size, when to replace tires, DOT age code, tire pressure in Jordan's heat, balancing vs alignment, all-terrain vs mud-terrain, premium vs value tires, flat tire steps, tire rotation, best tires for Jordan's heat, summer vs all-season tires (/guides/{slug}).
 - [Contact](https://abualraghebtires.com/contact) · [Q&A](https://abualraghebtires.com/faq) · [News & Offers](https://abualraghebtires.com/news) · [Careers](https://abualraghebtires.com/careers)
 
 ## Arabic
