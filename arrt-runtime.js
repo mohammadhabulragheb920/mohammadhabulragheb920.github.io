@@ -65,6 +65,8 @@
     var props = {};
     try { props = JSON.parse(root.getAttribute("data-props") || "{}"); } catch (e) {}
     initLang = props.lang || null;
+    // The URL decides the language (/ar/... = Arabic). Keep the stored preference in step so page logic agrees.
+    try { if (initLang) localStorage.setItem("arrt-lang", initLang); } catch (e) {}
     var Component;
     try { Component = new Function("DCLogic", logicSrc + "\nreturn Component;")(DCLogic); }
     catch (e) { console.error("ARRT logic failed", e); return; }
