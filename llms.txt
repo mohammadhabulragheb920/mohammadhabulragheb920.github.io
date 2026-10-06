@@ -8,7 +8,10 @@ Site is bilingual: English at /, Arabic (Jordanian register; Gulf register on /a
 - Founded: 1963, Mahatta, Amman, Jordan. Legal entity: Haitham Abu Al-Ragheb Sons Co.
 - Branches (Amman): 7th Circle (main, Pirelli Center, Zahran St.), Mahatta (King Abdullah I St.), Bayader (Industrial St.), Gardens (inside Engen station, Wasfi Al-Tal St., open until midnight incl. Friday), Wadi Saqra.
 - Faz3a 24/7: puncture, on-site tire fitting, battery, tow — inside Amman within ~45 minutes. WhatsApp +962 77 504 0602.
-- Sales WhatsApp: +962 77 504 0601 · Phone: +962 7 7633 3353 · Email: info@abualraghebtires.com
+- Hours: 7th Circle Sat–Thu 9:00–20:30 · Mahatta Sat–Thu 8:30–19:00 · Bayader and Wadi Saqra Sat–Thu 9:00–20:00 · Gardens Sat–Thu 8:00–24:00 and Fri 9:00–23:00. Other branches closed Friday. Faz3a 24/7.
+- Branch services: tire fitting and replacement, wheel balancing, nitrogen inflation, puncture repair, battery testing and replacement, wheel/rim fitting.
+- Sales WhatsApp: +962 77 504 0601 · Phone: +962 7 7633 3353 · Email: info@abualraghebtires.com · Dubai B2B WhatsApp: +971 50 767 8529
+- Official accounts: instagram.com/abu_alragheb_tires · facebook.com/AbuAlraghebTires.jo · linktr.ee/abualraghebtires
 - Official dealer: Zeknova, Vitour, Wideway, Maxxis Razr, Fuel, KMC, XD wheels, Turbo Batteries. Authorised distributor: Pirelli, Michelin, Continental, Goodyear, Bridgestone, Dunlop, Toyo, Falken, BFGoodrich, Hankook, Kumho, Nexen, Brinx, Sailun, Giti, Jinyu, Linglong, Petlas, Lassa and more.
 - Motorsport: Rally Jordan, Jordan Drift, Baja, Red Bull Car Park Drift.
 
@@ -21,6 +24,8 @@ Site is bilingual: English at /, Arabic (Jordanian register; Gulf register on /a
 - [Brands](https://abualraghebtires.com/brands): all brands with per-brand pages (/brands/{slug}).
 - [About](https://abualraghebtires.com/about): timeline since 1963, factory training, motorsport.
 - [Dubai](https://abualraghebtires.com/dubai): UAE B2B supply and the Al Quoz showroom.
+- [Services](https://abualraghebtires.com/services): tire fitting, wheel balancing, puncture repair, nitrogen, car batteries, wheels & rims; tires for cars, SUV/4x4, EVs, trucks & buses (/services/{slug}).
+- [Tire guides](https://abualraghebtires.com/guides): how to read a tire size, when to replace tires, DOT age code, tire pressure in Jordan's heat, balancing vs alignment, all-terrain vs mud-terrain, premium vs value tires, flat tire steps, tire rotation (/guides/{slug}).
 - [Contact](https://abualraghebtires.com/contact) · [Q&A](https://abualraghebtires.com/faq) · [News & Offers](https://abualraghebtires.com/news) · [Careers](https://abualraghebtires.com/careers)
 
 ## Arabic

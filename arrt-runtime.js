@@ -16,13 +16,17 @@
     var run = function () { if (!pending) return; pending = null; paint(inst); };
     requestAnimationFrame(run); setTimeout(run, 80);
   }
-  var root, tpl, hoverEl, inst, lastProps;
+  var root, tpl, hoverEl, inst, lastProps, slotHtml = null, initLang = null, initPath = location.pathname;
   function paint(i) {
     var vals = i.renderVals();
     var r = E.render(tpl, vals);
     var y = window.scrollY;
     root.innerHTML = r.html;
     hoverEl.textContent = r.css;
+    // Static SEO content (prerendered per page + language) survives every repaint.
+    if (slotHtml !== null) { var sl = root.querySelector("#arrt-slot"); if (sl) sl.innerHTML = slotHtml; }
+    // Language switch rewrites the URL to the other-language page: load it so all static content matches.
+    if (initLang && i.state && i.state.lang && i.state.lang !== initLang && location.pathname !== initPath) { location.reload(); return; }
     sync(root);
     bind(root, r.fns);
     if (i.componentDidUpdate) { try { i.componentDidUpdate(lastProps || i.props, {}); } catch (e) { console.warn(e); } }
@@ -46,15 +50,23 @@
   }
   function boot() {
     root = document.getElementById("arrt-app");
+    var P = window.ARRT_PAGE || {};
     var t = document.getElementById("arrt-tpl");
-    var logic = document.getElementById("arrt-logic");
-    if (!root || !t || !logic) return;
-    try { tpl = JSON.parse(t.textContent); } catch (e) { tpl = t.textContent; }
+    var logicEl = document.getElementById("arrt-logic");
+    var logicSrc = P.logic || (logicEl && logicEl.textContent);
+    if (!root || !(P.tpl || t) || !logicSrc) return;
+    if (P.tpl) tpl = P.tpl; else { try { tpl = JSON.parse(t.textContent); } catch (e) { tpl = t.textContent; } }
+    var sl0 = root.querySelector("#arrt-slot"); if (sl0) slotHtml = sl0.innerHTML;
+    // Structured data is final at build time: page logic must not overwrite or duplicate it.
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(function (el) { var v = el.textContent; try { Object.defineProperty(el, "textContent", { get: function () { return v; }, set: function () {} }); } catch (e) {} });
+    var hApp = document.head.appendChild.bind(document.head);
+    document.head.appendChild = function (n) { if (n && n.tagName === "SCRIPT" && (n.type === "application/ld+json" || (n.getAttribute && n.getAttribute("type") === "application/ld+json"))) return n; return hApp(n); };
     hoverEl = document.getElementById("arrt-hover");
     var props = {};
     try { props = JSON.parse(root.getAttribute("data-props") || "{}"); } catch (e) {}
+    initLang = props.lang || null;
     var Component;
-    try { Component = new Function("DCLogic", logic.textContent + "\nreturn Component;")(DCLogic); }
+    try { Component = new Function("DCLogic", logicSrc + "\nreturn Component;")(DCLogic); }
     catch (e) { console.error("ARRT logic failed", e); return; }
     inst = new Component(props);
     if (inst.state === undefined) inst.state = {};
