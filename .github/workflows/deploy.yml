@@ -33,7 +33,7 @@ jobs:
           ref: ${{ inputs.ref || github.sha }}
       - id: meta
         run: echo "sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
       - name: Gate — the same site check that guards pull requests
@@ -75,7 +75,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
       - name: Wait for the CDN, then check the live domain
