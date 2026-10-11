@@ -1,0 +1,4 @@
+# Every change needs approval from a code owner before it can be merged.
+# The person who opens a pull request cannot approve it, so two owners are listed:
+# the site owner and the web builder. One approval from either satisfies the rule.
+* @mohammadhabulragheb920 @Ghaithm22

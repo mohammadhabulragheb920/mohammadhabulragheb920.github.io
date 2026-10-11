@@ -1,0 +1,99 @@
+# Continuous delivery: every merge to main is re-checked, deployed to GitHub Pages,
+# tagged as a release, and smoke-tested on the live domain.
+# Rollback: Actions → Deploy → Run workflow → enter a release tag (see docs/RUNBOOK.md).
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Release tag to deploy (rollback), e.g. release-20261011-0930-ab12cd3. Leave empty for main."
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      sha: ${{ steps.meta.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+      - id: meta
+        run: echo "sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Gate — the same site check that guards pull requests
+        # Old release tags created before the checker existed are deployed as-is.
+        run: |
+          if [ -f scripts/ci/check-site.mjs ]; then node scripts/ci/check-site.mjs .; else echo "No checker in this ref — deploying as tagged."; fi
+      - name: Assemble the public site (tooling and docs are never published)
+        run: |
+          mkdir _site
+          rsync -a ./ _site/ \
+            --exclude '.git' --exclude '.github' --exclude 'scripts' --exclude 'docs' \
+            --exclude '_site' --exclude '*.md' --exclude 'lighthouserc.json' \
+            --exclude '.htmlvalidate.json' --exclude '.gitignore' --exclude '.DS_Store'
+          test -f _site/index.html && test -f _site/CNAME
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  smoke-test:
+    name: smoke-test
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Wait for the CDN, then check the live domain
+        run: sleep 45 && node scripts/ci/smoke.mjs
+
+  tag-release:
+    name: tag-release
+    needs: smoke-test
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tag this deployment so it can be restored later
+        run: |
+          TAG="release-$(date -u +%Y%m%d-%H%M)-${{ needs.build.outputs.sha }}"
+          git tag "$TAG"
+          git push origin "$TAG"
+          echo "Released **$TAG**" >> "$GITHUB_STEP_SUMMARY"

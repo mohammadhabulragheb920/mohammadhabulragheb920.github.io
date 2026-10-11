@@ -1,0 +1,42 @@
+# Daily health check of the live site + weekly external-link check.
+# A failure turns the run red and GitHub emails the repository owner.
+name: Monitor
+
+on:
+  schedule:
+    - cron: "15 4 * * *"   # daily 07:15 Amman — live smoke test
+    - cron: "0 5 * * 0"    # Sundays 08:00 Amman — external links
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  live-smoke:
+    name: live-smoke
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 4 * * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/ci/smoke.mjs
+
+  external-links:
+    name: external-links
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 5 * * 0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check outbound links (WhatsApp, Maps, brands, socials)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress --max-concurrency 8 --timeout 20 --accept 200,201,204,301,302,403,429
+            --exclude-path .github --exclude-path scripts
+            --exclude '^https://abualraghebtires\.com' --exclude 'fonts\.(googleapis|gstatic)\.com'
+            '**/*.html'
+          fail: true

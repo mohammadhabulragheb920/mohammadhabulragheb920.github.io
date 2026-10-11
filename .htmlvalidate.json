@@ -1,0 +1,12 @@
+{
+  "extends": ["html-validate:document"],
+  "rules": {
+    "no-dup-id": "error",
+    "attribute-allowed-values": "error",
+    "close-order": "error",
+    "element-permitted-content": "warn",
+    "require-sri": "off",
+    "no-inline-style": "off",
+    "prefer-native-element": "off"
+  }
+}
