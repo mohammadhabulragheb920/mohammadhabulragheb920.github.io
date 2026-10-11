@@ -6,9 +6,10 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(process.argv[2] || '.');
-const CONFIG = JSON.parse(fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), 'site-rules.json'), 'utf8'));
+const CONFIG = JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), 'site-rules.json'), 'utf8'));
 const ORIGIN = CONFIG.origin.replace(/\/$/, '');
 
 const errors = [];
