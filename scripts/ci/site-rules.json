@@ -1,0 +1,13 @@
+{
+  "origin": "https://abualraghebtires.com",
+  "cname": "abualraghebtires.com",
+  "organizationId": "https://abualraghebtires.com/#org",
+  "ignoreDirs": [".git", ".github", "scripts", "node_modules", ".lighthouseci", "_ssg"],
+  "notPages": ["/404.html"],
+  "requireHreflang": true,
+  "hreflangExempt": [],
+  "sitemapExempt": [],
+  "requiredFiles": ["/index.html", "/404.html", "/robots.txt", "/sitemap.xml", "/llms.txt", "/favicon.ico", "/site.webmanifest", "/CNAME"],
+  "description": { "min": 70, "max": 170 },
+  "budgets": { "htmlKbWarn": 150, "htmlKbError": 400, "imageKbWarn": 300, "imageKbError": 1000 }
+}
