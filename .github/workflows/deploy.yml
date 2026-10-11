@@ -83,7 +83,7 @@ jobs:
 
   tag-release:
     name: tag-release
-    needs: smoke-test
+    needs: [build, smoke-test]   # build is listed so needs.build.outputs.sha is available
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 5
