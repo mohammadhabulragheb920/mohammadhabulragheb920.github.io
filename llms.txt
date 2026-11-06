@@ -32,4 +32,8 @@ Site is bilingual: English at /, Arabic (Jordanian register; Gulf register on /a
 - Same structure under https://abualraghebtires.com/ar/ (e.g. https://abualraghebtires.com/ar/tires, https://abualraghebtires.com/ar/faz3a).
 
 ## Optional
+- [Full version for AI assistants](https://abualraghebtires.com/llms-full.txt)
 - [Sitemap](https://abualraghebtires.com/sitemap.xml)
+- [RSS feed of guides](https://abualraghebtires.com/feed.xml)
+
+Last updated: 2026-11-06
