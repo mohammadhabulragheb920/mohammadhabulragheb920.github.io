@@ -1,0 +1,54 @@
+{
+  "name": "Abu Al-Ragheb Tires — tires, wheels, batteries and 24/7 roadside service",
+  "description": "Multi-brand tire, wheel and battery services at five Amman branches, plus Faz3a 24/7 roadside assistance and fleet supply.",
+  "provider": "Abu Al-Ragheb Tires",
+  "url": "https://abualraghebtires.com/",
+  "dateModified": "2026-11-06",
+  "capabilities": [
+    {
+      "name": "Tire fitting and replacement",
+      "description": "Same-day fitting for most sizes at all five Amman branches.",
+      "url": "https://abualraghebtires.com/services/tire-fitting"
+    },
+    {
+      "name": "Wheel balancing",
+      "description": "Computerised balancing with every fitting.",
+      "url": "https://abualraghebtires.com/services/wheel-balancing"
+    },
+    {
+      "name": "Puncture repair",
+      "description": "Plug-and-patch repairs where the tire is safe to repair.",
+      "url": "https://abualraghebtires.com/services/puncture-repair"
+    },
+    {
+      "name": "Nitrogen inflation",
+      "description": "Nitrogen fills for steadier pressure in Jordan’s heat.",
+      "url": "https://abualraghebtires.com/services/nitrogen-inflation"
+    },
+    {
+      "name": "Car batteries",
+      "description": "Battery testing and replacement.",
+      "url": "https://abualraghebtires.com/services/car-batteries"
+    },
+    {
+      "name": "Wheels and rims",
+      "description": "Alloy wheels and rim fitting.",
+      "url": "https://abualraghebtires.com/services/wheels-rims"
+    },
+    {
+      "name": "EV tires",
+      "description": "EV-specific tires matched to the car’s weight and torque.",
+      "url": "https://abualraghebtires.com/services/ev-tires"
+    },
+    {
+      "name": "Faz3a 24/7 roadside service",
+      "description": "Puncture, on-site tire fitting, battery and tow inside Amman.",
+      "url": "https://abualraghebtires.com/faz3a"
+    },
+    {
+      "name": "Fleet and government supply",
+      "description": "Supply contracts, on-site fitting and tender documentation since 1967.",
+      "url": "https://abualraghebtires.com/fleet"
+    }
+  ]
+}
