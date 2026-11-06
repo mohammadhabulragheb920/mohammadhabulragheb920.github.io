@@ -1,0 +1,125 @@
+# Abu Al-Ragheb Tires (أبو الراغب للإطارات)
+
+> Jordan's multi-brand tire, wheel and battery specialist, founded in Mahatta, Amman in 1963 and run by the same family for three generations — legal name Haitham Abu Al-Ragheb Sons Co. (شركة أبناء هيثم أبو الراغب للإطارات). Not affiliated with other shops that share the Abu Al-Ragheb or Ragheb name; official channels are only those listed on abualraghebtires.com. Five branches in Amman, a 24/7 roadside service called Faz3a, fleet and government supply since 1967, and B2B supply in the UAE since 2024 with a Dubai (Al Quoz) showroom opening soon.
+
+Site is bilingual: English at /, Arabic (Jordanian register; Gulf register on /ar/dubai) at /ar/. All prices are quoted on WhatsApp — there is no online checkout.
+
+## Key facts
+- Founded: 1963, Mahatta, Amman, Jordan. Legal entity: Haitham Abu Al-Ragheb Sons Co.
+- Branches (Amman): 7th Circle (main, Pirelli Center, Zahran St.), Mahatta (King Abdullah I St.), Bayader (Industrial St.), Gardens (inside Engen station, Wasfi Al-Tal St., open until midnight incl. Friday), Wadi Saqra.
+- Faz3a 24/7: puncture, on-site tire fitting, battery, tow — inside Amman within ~45 minutes. WhatsApp +962 77 504 0602.
+- Hours: 7th Circle Sat–Thu 9:00–20:30 · Mahatta Sat–Thu 8:30–19:00 · Bayader and Wadi Saqra Sat–Thu 9:00–20:00 · Gardens Sat–Thu 8:00–24:00 and Fri 9:00–23:00. Other branches closed Friday. Faz3a 24/7.
+- Branch services: tire fitting and replacement, wheel balancing, nitrogen inflation, puncture repair, battery testing and replacement, wheel/rim fitting.
+- Sales WhatsApp: +962 77 504 0601 · Phone: +962 7 7633 3353 · Email: info@abualraghebtires.com · Dubai B2B WhatsApp: +971 50 767 8529
+- Official accounts: instagram.com/abu_alragheb_tires · facebook.com/AbuAlraghebTires.jo · linktr.ee/abualraghebtires
+- Official dealer: Zeknova, Vitour, Wideway, Maxxis Razr, Fuel, KMC, XD wheels, Turbo Batteries. Authorised distributor: Pirelli, Michelin, Continental, Goodyear, Bridgestone, Dunlop, Toyo, Falken, BFGoodrich, Hankook, Kumho, Nexen, Brinx, Sailun, Giti, Jinyu, Linglong, Petlas, Lassa and more.
+- Motorsport: Rally Jordan, Jordan Drift, Baja, Red Bull Car Park Drift.
+
+## Pages
+- [Home](https://abualraghebtires.com/): overview, quick paths, branches, FAQ.
+- [Tire Finder](https://abualraghebtires.com/tires): search by size (width/profile/rim) or by vehicle; catalogue at /data/catalogue.csv.
+- [Faz3a 24/7](https://abualraghebtires.com/faz3a): roadside assistance — how it works, coverage, pricing from JD 10.
+- [Branches](https://abualraghebtires.com/branches): five Amman branches with hours, maps and per-branch pages (/branches/{slug}).
+- [Fleet & Government](https://abualraghebtires.com/fleet): supply contracts, on-site fitting, tender documentation; company profile on request.
+- [Brands](https://abualraghebtires.com/brands): all brands with per-brand pages (/brands/{slug}).
+- [About](https://abualraghebtires.com/about): timeline since 1963, factory training, motorsport.
+- [Dubai](https://abualraghebtires.com/dubai): UAE B2B supply and the Al Quoz showroom.
+- [Services](https://abualraghebtires.com/services): tire fitting, wheel balancing, puncture repair, nitrogen, car batteries, wheels & rims; tires for cars, SUV/4x4, EVs, trucks & buses (/services/{slug}).
+- [Tire guides](https://abualraghebtires.com/guides): how to read a tire size, when to replace tires, DOT age code, tire pressure in Jordan's heat, balancing vs alignment, all-terrain vs mud-terrain, premium vs value tires, flat tire steps, tire rotation, best tires for Jordan's heat, summer vs all-season tires (/guides/{slug}).
+- [Contact](https://abualraghebtires.com/contact) · [Q&A](https://abualraghebtires.com/faq) · [News & Offers](https://abualraghebtires.com/news) · [Careers](https://abualraghebtires.com/careers)
+
+## Arabic
+- Same structure under https://abualraghebtires.com/ar/ (e.g. https://abualraghebtires.com/ar/tires, https://abualraghebtires.com/ar/faz3a).
+
+## Optional
+- [Full version for AI assistants](https://abualraghebtires.com/llms-full.txt)
+- [Sitemap](https://abualraghebtires.com/sitemap.xml)
+- [RSS feed of guides](https://abualraghebtires.com/feed.xml)
+
+Last updated: 2026-11-06
+
+## Services in detail
+- **Tire fitting and replacement**: Same-day fitting for most sizes at all five Amman branches. (https://abualraghebtires.com/services/tire-fitting)
+- **Wheel balancing**: Computerised balancing with every fitting. (https://abualraghebtires.com/services/wheel-balancing)
+- **Puncture repair**: Plug-and-patch repairs where the tire is safe to repair. (https://abualraghebtires.com/services/puncture-repair)
+- **Nitrogen inflation**: Nitrogen fills for steadier pressure in Jordan’s heat. (https://abualraghebtires.com/services/nitrogen-inflation)
+- **Car batteries**: Battery testing and replacement. (https://abualraghebtires.com/services/car-batteries)
+- **Wheels and rims**: Alloy wheels and rim fitting. (https://abualraghebtires.com/services/wheels-rims)
+- **EV tires**: EV-specific tires matched to the car’s weight and torque. (https://abualraghebtires.com/services/ev-tires)
+- **Faz3a 24/7 roadside service**: Puncture, on-site tire fitting, battery and tow inside Amman. (https://abualraghebtires.com/faz3a)
+- **Fleet and government supply**: Supply contracts, on-site fitting and tender documentation since 1967. (https://abualraghebtires.com/fleet)
+
+## Frequently asked questions
+
+### Which tire brand is best for Jordan's roads?
+There is no single best brand — the right tire depends on your car, how you drive and your budget. Abu Al-Ragheb Tires has carried every major brand since 1963, from Pirelli, Michelin, Continental, Goodyear and Bridgestone to value brands, so we recommend from the whole market, not from one agency.
+
+### Are Chinese tires safe?
+Yes, when you buy the right ones. Abu Al-Ragheb Tires has worked directly with Chinese manufacturers since 2015 and only stocks lines that meet the same DOT/ECE standards as European brands. We'll tell you plainly which ones we'd put on our own cars.
+
+### What's the difference between summer, all-season and all-terrain tires in Jordan?
+Jordan's summers are hot and dry and its winters are short but can bring ice in Amman and the north. For most drivers an all-season tire is the practical choice; sports cars benefit from summer tires; 4x4s that leave the asphalt need all-terrain or mud-terrain tires. Drivers in the highlands should ask us about winter grip between December and February.
+
+### How often should I change my tires?
+Replace tires when the tread reaches 1.6 mm, when you see cracks or bulges, or when they are more than five to six years old — whichever comes first. The DOT date code is on the sidewall; every Abu Al-Ragheb Tires branch checks it for free.
+
+### How much do tires cost in Jordan?
+It depends on size, brand and type. Abu Al-Ragheb Tires doesn't publish prices online because stock and offers change daily — send your size on WhatsApp and you'll get a quote within minutes, usually with two or three options at different price points.
+
+### Do you have offers or payment options?
+We run offers throughout the year and special pricing for companies and fleets. Ask on WhatsApp for current offers and the payment options available at your branch.
+
+### Can I order tires online?
+Yes. Find your size in the Tire Finder, tap &quot;Get price on WhatsApp&quot;, and we confirm price, availability and a fitting slot at the branch nearest you — or send Faz3a to fit them where you are.
+
+### Do your tires come with a warranty?
+Every tire sold by Abu Al-Ragheb Tires is genuine and factory-fresh, covered by the manufacturer's warranty against manufacturing defects. Keep your invoice — it's your warranty record.
+
+### What is Faz3a?
+Faz3a is Abu Al-Ragheb Tires' 24/7 roadside and home assistance service in Amman. Puncture, flat battery, tire change, towing — message +962 77 504 0602 on WhatsApp and a van reaches you within 45 minutes inside Amman. Pay by CliQ or cash; jobs start from JD 10.
+
+### Does Faz3a cover trucks and fleets?
+Yes — cars, SUVs, vans, trucks and company fleets, inside Amman and nearby areas. Fleet managers can set up a dedicated Faz3a line.
+
+### Which services do you offer at the branch?
+Tire fitting, wheel balancing, nitrogen inflation, puncture repair, tire and battery checks, and wheel and rim fitting. Message us on WhatsApp to confirm a service at your nearest branch before you come.
+
+### Do you sell batteries and rims as well as tires?
+Yes. Abu Al-Ragheb Tires is the official dealer for Turbo Batteries and for Fuel, KMC and XD wheels, with BBS made to order and Black Rhino in stock.
+
+### Where are your branches in Amman?
+Abu Al-Ragheb Tires has five branches in Amman: 7th Circle (main branch, Pirelli Center, Zahran St), Mahatta (King Abdullah I St, since 1963), Bayader (Industrial St), Wadi Saqra (Wadi Saqra St) and Gardens (inside the Engen station, Gardens St). All five sell the same range.
+
+### What are your opening hours, and are you open on Fridays?
+7th Circle Sat–Thu 9:00–20:30 · Mahatta Sat–Thu 8:30–19:00 · Bayader and Wadi Saqra Sat–Thu 9:00–20:00 · Gardens (Engen) Sat–Thu 8:00–24:00 and Friday 9:00–23:00. The other branches are closed on Friday. Faz3a runs 24/7, including Friday.
+
+### Do you have a branch in Dubai?
+Abu Al-Ragheb Tires has supplied the UAE market B2B since 2024 and is opening a retail showroom in Al Quoz, Dubai, with the same brands and services as Jordan. Follow us for the opening date.
+
+### Do you supply companies, fleets and government?
+Yes — Abu Al-Ragheb Tires has supplied government institutions since 1967 and serves 50+ fleet, corporate and government clients every quarter, with tender-ready documentation, on-site fitting and Faz3a cover. Client names stay confidential; references are shared privately on request.
+
+### Is Abu Al-Ragheb Tires related to other tire shops with &quot;Ragheb&quot; or &quot;Abu Al-Ragheb&quot; in the name?
+No. Abu Al-Ragheb Tires is Haitham Abu Al-Ragheb Sons Co. (شركة أبناء هيثم أبو الراغب للإطارات), in Amman since 1963 and run today by the third generation. Our only branches are 7th Circle (Pirelli Center), Mahatta, Bayader, Gardens and Wadi Saqra, plus our Dubai operation. Our only official contacts are WhatsApp +962 77 504 0601, Faz3a +962 77 504 0602, phone +962 7 7633 3353 and abualraghebtires.com. Any other shop with a similar name is a separate business.
+
+### Are you an official dealer or distributor?
+Abu Al-Ragheb Tires is the official dealer for Zeknova, Vitour, Wideway, Maxxis Razr, Fuel, KMC, XD and Turbo Batteries, and an authorised distributor for Pirelli, Michelin, Continental, Goodyear, Bridgestone and more than a dozen other brands.
+
+### Why buy from Abu Al-Ragheb Tires?
+Sixty-three years and three generations of knowing tires. Our team is factory-trained by Michelin, Pirelli, Continental, Goodyear, Yokohama and Bridgestone, we race what we sell in Rally Jordan and Jordan Drift, and we fit more than two million tires a year. We don't just sell you a tire — we help you choose the right one at the right price, and we stand behind it.
+
+## Articles
+- [How to read your tire size](https://abualraghebtires.com/guides/how-to-read-tire-size) — What every number on a tire sidewall means — width, profile, rim size, load index and speed rating — and where to find your car's correct size. (2026-10-06)
+- [When should you replace your tires?](https://abualraghebtires.com/guides/when-to-replace-tires) — Replace tires at 1.6 mm tread, at five to six years old, or at the first crack or bulge — whichever comes first. How to check each one yourself. (2026-10-06)
+- [How old are my tires? Reading the DOT code](https://abualraghebtires.com/guides/tire-age-dot-code) — Find the four-digit DOT date code on your tire sidewall: 2324 means week 23 of 2024. How old is too old, and why fresh stock matters in Jordan's heat. (2026-10-06)
+- [What tire pressure should I use?](https://abualraghebtires.com/guides/tire-pressure-guide) — Use the pressure on your door sticker, check it cold once a month, and expect it to rise in summer heat. A practical tire pressure guide for Jordanian drivers. (2026-10-06)
+- [Wheel balancing vs wheel alignment](https://abualraghebtires.com/guides/balancing-vs-alignment) — Vibration at speed means balancing. Pulling to one side or a crooked steering wheel means alignment. How to tell which one your car needs. (2026-10-06)
+- [Tire care in Jordan's summer heat](https://abualraghebtires.com/guides/summer-tire-care-jordan) — Hot asphalt, long drives to Aqaba and the Dead Sea, and full cars: seven tire checks that prevent summer blowouts in Jordan. (2026-10-06)
+- [All-terrain vs mud-terrain tires](https://abualraghebtires.com/guides/all-terrain-vs-mud-terrain) — Wadi Rum sand, rocky wadis or Amman traffic? How all-terrain and mud-terrain tires compare on grip, noise, wear and comfort — and which one suits you. (2026-10-06)
+- [Premium, mid-range or value tires?](https://abualraghebtires.com/guides/premium-vs-value-tires) — Pirelli or a value brand? What you get for the extra money, when a value tire is the smart choice, and how to check any tire meets DOT/ECE standards. (2026-10-06)
+- [Flat tire? What to do, step by step](https://abualraghebtires.com/guides/flat-tire-what-to-do) — Get safe, decide whether to change the wheel or call for help, and avoid ruining a repairable tire. Faz3a 24/7 reaches you within 45 minutes inside Amman. (2026-10-06)
+- [Tire Rotation: Why, When and How Often](https://abualraghebtires.com/guides/tire-rotation) — Front tires wear faster than rear ones. Rotating every 8,000–10,000 km evens out wear and gets more life from a set. How rotation works on FWD, RWD and 4x4. (2026-10-06)
+- [Best Tires for Hot Weather in Jordan](https://abualraghebtires.com/guides/best-tires-for-jordan-heat) — What makes a tire good in Jordan's heat: heat-resistant compounds, the right load and speed rating, fresh DOT dates and correct pressure. How to choose. (2026-10-06)
+- [Summer vs All-Season Tires in Amman](https://abualraghebtires.com/guides/summer-vs-all-season-tires) — Summer or all-season tires for Amman? How each performs in Jordan's hot dry summers and short, sometimes icy winters — and which suits your car. (2026-10-06)
+
+Last updated: 2026-11-06
