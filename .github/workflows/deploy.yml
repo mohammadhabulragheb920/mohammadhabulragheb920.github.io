@@ -28,12 +28,12 @@ jobs:
     outputs:
       sha: ${{ steps.meta.outputs.sha }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.ref || github.sha }}
       - id: meta
         run: echo "sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
       - name: Gate — the same site check that guards pull requests
@@ -48,8 +48,8 @@ jobs:
             --exclude '_site' --exclude '*.md' --exclude 'lighthouserc.json' \
             --exclude '.htmlvalidate.json' --exclude '.gitignore' --exclude '.DS_Store'
           test -f _site/index.html && test -f _site/CNAME
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -74,8 +74,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 20
       - name: Wait for the CDN, then check the live domain
@@ -90,7 +90,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Tag this deployment so it can be restored later
         run: |
           TAG="release-$(date -u +%Y%m%d-%H%M)-${{ needs.build.outputs.sha }}"

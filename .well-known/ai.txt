@@ -1,0 +1,19 @@
+# ai.txt — AI usage policy for abualraghebtires.com
+# Updated: 2026-11-06
+
+User-Agent: *
+Allow: /
+
+# Search, answer and citation by AI assistants is welcome. Please cite the page URL.
+Allow-Search: yes
+Allow-Citation: yes
+Allow-Training: yes
+
+Contact: info@abualraghebtires.com
+Summary: https://abualraghebtires.com/ai/summary.json
+FAQ: https://abualraghebtires.com/ai/faq.json
+Services: https://abualraghebtires.com/ai/service.json
+LLMs: https://abualraghebtires.com/llms.txt
+LLMs-Full: https://abualraghebtires.com/llms-full.txt
+Sitemap: https://abualraghebtires.com/sitemap.xml
+Feed: https://abualraghebtires.com/feed.xml
